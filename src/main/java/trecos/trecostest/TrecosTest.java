@@ -1,6 +1,7 @@
 package trecos.trecostest;
 
 import trecos.calculator.Calculator;
+import trecos.calculator.MultiTable;
 
 public class TrecosTest {
 
@@ -12,6 +13,14 @@ public class TrecosTest {
         System.out.println(calc.mul(3, 3));	// Exibe → 9
         System.out.println(calc.div(4, 2));	// Exibe → 2
         System.out.println(calc.mod(4, 3));	// Exibe → 1
+
+        System.out.println("--------------------------");
+
+        MultiTable multiTable = new MultiTable(5);
+        multiTable.showTable();
+
+        MultiTable multiTable2 = new MultiTable(0);
+        multiTable2.showTable();
 
     }
 }
