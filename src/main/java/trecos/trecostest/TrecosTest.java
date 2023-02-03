@@ -2,6 +2,7 @@ package trecos.trecostest;
 
 import trecos.calculator.Calculator;
 import trecos.calculator.MultiTable;
+import trecos.tools.DateToFormat;
 import trecos.tools.Validator;
 
 public class TrecosTest {
@@ -26,6 +27,9 @@ public class TrecosTest {
         Validator validate = new Validator();
         System.out.println(validate.isMail("joca@silva.com"));	// Exibe → true
         System.out.println(validate.isMail("teste@"));		// Exibe → false
+
+        DateToFormat fDate = new DateToFormat();
+        System.out.println(fDate.getBr("2023-02-03"));	// Exibe → 03/02/2023
 
     }
 }
