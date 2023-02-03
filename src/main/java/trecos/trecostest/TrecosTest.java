@@ -2,6 +2,7 @@ package trecos.trecostest;
 
 import trecos.calculator.Calculator;
 import trecos.calculator.MultiTable;
+import trecos.tools.Validator;
 
 public class TrecosTest {
 
@@ -21,6 +22,10 @@ public class TrecosTest {
 
         MultiTable multiTable2 = new MultiTable(0);
         multiTable2.showTable();
+
+        Validator validate = new Validator();
+        System.out.println(validate.isMail("joca@silva.com"));	// Exibe → true
+        System.out.println(validate.isMail("teste@"));		// Exibe → false
 
     }
 }
