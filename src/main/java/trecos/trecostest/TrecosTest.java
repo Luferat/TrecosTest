@@ -6,15 +6,12 @@ public class TrecosTest {
 
     public static void main(String[] args) {
 
-        // Instância do objeto
-        Calculator calc1 = new Calculator(1, 1);
-        System.out.println(calc1.getResult());
-
-        Calculator calc2 = new Calculator(3, 2);
-        System.out.println(calc2.getResult());
-
-        Calculator calc3 = new Calculator(-1, 3);
-        System.out.println(calc3.getResult());
+        Calculator calc = new Calculator();
+        System.out.println(calc.sum(5, 2));	// Exibe → 7
+        System.out.println(calc.sub(9, 3));	// Exibe → 6		
+        System.out.println(calc.mul(3, 3));	// Exibe → 9
+        System.out.println(calc.div(4, 2));	// Exibe → 2
+        System.out.println(calc.mod(4, 3));	// Exibe → 1
 
     }
 }
