@@ -58,7 +58,7 @@ public class DbConnection {
             PreparedStatement pstm = conn.prepareStatement(sql);
             ResultSet res = pstm.executeQuery();
             while (res.next()) {
-                System.out.println("ID: " + res.getInt("did"));
+                System.out.println("ID: " + res.getString("dname"));
             }
             dbConnection.dbClose(conn, pstm, res);
         } catch (SQLException error) {
