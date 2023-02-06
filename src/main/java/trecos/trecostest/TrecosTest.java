@@ -14,7 +14,7 @@ public class TrecosTest {
         System.out.println(calc.sum(5, 2));	// Exibe → 7
         System.out.println(calc.sub(9, 3));	// Exibe → 6		
         System.out.println(calc.mul(3, 3));	// Exibe → 9
-        System.out.println(calc.div(4, 2));	// Exibe → 2
+        System.out.println(calc.div(0, 0));	// Exibe → 2
         System.out.println(calc.mod(4, 3));	// Exibe → 1
 
         System.out.println("--------------------------");
