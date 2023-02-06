@@ -10,20 +10,26 @@ import java.util.logging.Logger;
 public class DateToFormat {
 
     public String getBr(String systemDate) {
+        return formatDate(systemDate, "yyyy-MM-dd", "dd/MM/yyyy");
+    }
+
+    public String getSystem(String brDate) {
+        return formatDate(brDate, "dd/MM/yyyy", "yyyy-MM-dd");
+    }
+
+    public String formatDate(String originalDate, String originalFormat, String convertedFormat) {
 
         String output = null;
         try {
-
-            DateFormat parser = new SimpleDateFormat("yyyy-MM-dd");
-            Date date = parser.parse(systemDate);
-            DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+            DateFormat parser = new SimpleDateFormat(originalFormat);
+            Date date = parser.parse(originalDate);
+            DateFormat formatter = new SimpleDateFormat(convertedFormat);
             output = formatter.format(date);
-
         } catch (ParseException ex) {
             Logger.getLogger(DateToFormat.class.getName()).log(Level.SEVERE, null, ex);
         }
-
         return output;
 
     }
+
 }

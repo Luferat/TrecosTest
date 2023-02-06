@@ -30,6 +30,10 @@ public class TrecosTest {
 
         DateToFormat fDate = new DateToFormat();
         System.out.println(fDate.getBr("2023-02-03"));	// Exibe → 03/02/2023
+        
+        DateToFormat brDate = new DateToFormat();
+	System.out.println(brDate.getSystem("03/02/2023"));     // Exibe → 2023-02-03
+
 
     }
 }
