@@ -2,9 +2,7 @@ package trecos.calculator;
 
 public final class Calculator {
 
-    private int num1;
-    private int num2;
-    private int result;
+    private int num1, num2, result;
 
     public Calculator(int n1, int n2) {
         setNum1(n1);
