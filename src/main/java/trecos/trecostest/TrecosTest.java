@@ -19,7 +19,9 @@ public class TrecosTest {
         MultiTable multiTable = new MultiTable(5);
         multiTable.showTable();
 
-        MultiTable multiTable2 = new MultiTable(0);
+        System.out.println("--------------------------");
+
+        MultiTable multiTable2 = new MultiTable(9);
         multiTable2.showTable();
 
     }
